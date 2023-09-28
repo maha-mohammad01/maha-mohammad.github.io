@@ -9,13 +9,7 @@ body{
    }
 
 
-  .flex-container
-  {
-  height: 100vh; 
-  display: flex;
-   flex-direction: column;
-  }
-
+ 
 .ph{
 width:auto;
 float: left;
@@ -66,27 +60,25 @@ header{
 
 
 #header{
-overflow: hidden;
-position: fixed;
-position: -webkit-sticky;
-margin-top: 0;
-margin-left: 150px;
-width: 100%;
-header {
-    position: sticky; top: 0;
-}
-
-}
-
-
-.header a {
-position:sticky;
-display: inline-block;
-color: white;
-text-align:left;
-padding-inline: 20px;  
-text-decoration: none;
-}
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: 150px;
+    width: 100%;
+    
+    
+    }
+    
+    
+    .header a {
+    position:sticky;
+    display: inline-block;
+    color: white;
+    text-align:left;
+    padding-inline: 20px;  
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: right;
+    }
 
 
 
@@ -155,18 +147,18 @@ padding-bottom: 6px;
 .footer {
     align-items: center;
     justify-content: center;
-position:relative;
-overflow:hidden;
-padding-bottom: 0;
-bottom:0px;
-left:0;
-width:100%;
-font-size: 10px;
-background-color: white;
-margin-bottom: 0px;
-padding-left: 50%;
-
-}
+    text-align: center;
+  position:relative;
+  overflow:hidden;
+  padding-bottom: 0;
+  bottom:0px;
+  left:0;
+  width:100%;
+  font-size: 10px;
+  background-color: white;
+  margin-bottom: 0px;
+  
+  }
 
 
 h5{
@@ -182,24 +174,17 @@ color: #ffffff;
 text-align: center;
     
 }
-.Contact h2{
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-    margin-left: 1%;
+
+.Contact h1 ::first-letter{
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(26, 14, 133);
 
 }
 
 
-
   
-  .google-map iframe {
-    width: 100%;
-    height: 300px;
-    left: 0;
-    margin-top: 2%;
-    position: absolute;
-  }
+ 
 
 .info{
     margin-top:22% ;
@@ -238,33 +223,26 @@ img.info{
 
 
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding: 5px;
-    margin-top: 30%;
-    margin-right: 40%;
-   
-    
-}
 
 
 
-.u1,.u2,.u3,.u4,.u5{
+
+.u1,.u2,.u3,.u4{
     display: flex;
 text-decoration: none;
     align-items: center;
     justify-content: start;
     width: 300px;
-    height: 100px;
-    margin-left: 20%;
-    padding-left: 20px;
+    flex-direction: column;
 
 
    
 }
 
+
+
+
+   
 
 a{
     text-decoration: none;
@@ -301,11 +279,15 @@ span.p{
     }
 
 
+/* qu */
 
-   #resume{
+.QUALIFICATIONS{
+    align-content: center; 
+    margin-left: 500px;
+}
+   #resume,.proj,.contme{
 
     justify-content: center;
-    padding-left: 110px;
 margin-top: 5%;
    }
    #resume h1{
@@ -318,9 +300,7 @@ margin-top: 5%;
   color: rgb(26, 14, 133);
    }
    #exp{
-    margin-top: 15%;
     justify-content: center;
-    padding-left: 110px;
 
    }
 
@@ -334,7 +314,11 @@ margin-top: 5%;
     color: #fff;
     border: auto solid white;
    }
+   #proj{
+    font-size: x-large;
+    justify-content: center;
 
+   }
    #proj h1{
     color: #fff;
     border: auto solid white;
@@ -346,25 +330,70 @@ margin-top: 5%;
    }
 
 
-   #proj{
+ 
 
-    justify-content: center;
-    padding-left: 110px;
-margin-top: 5%;
-   }
+#contme h1{
+ color: #fff;
+ border: auto solid white;
+}
+#contme h1::first-letter{
+ font-size: 4rem;
+font-weight: bold;
+color: rgb(26, 14, 133);
+}
+
    
-
-   .cadrproject  img{
-width:25%;
-height: 10%;
-
-
-
-
-
-
-
-
-   }
-
-
+p {
+    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+  }
+  .container {
+    color: #e5e5e5;
+    font-size: 2.26rem;
+    text-transform: uppercase;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 0;
+  }
+  
+  .animation {
+    height:50px;
+    overflow:hidden;
+    margin-left: 1rem;
+  }
+  
+  .animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height:2.81rem;
+    margin-bottom: 2.81rem;
+    display:inline-block;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 8s infinite;
+  }
+  
+  .first div {
+    background-color:#20a7d8;
+  }
+  .second div {
+    background-color:#CD921E;
+  }
+  .third div {
+    background-color:#c10528;
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -5.62rem;}
+    30% {margin-top: -5.62rem;}
+    40% {margin-top: -11.24rem;}
+    60% {margin-top: -11.24rem;}
+    70% {margin-top: -5.62rem;}
+    80% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
